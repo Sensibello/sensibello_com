@@ -1,12 +1,13 @@
 <template>
-  <ul v-if="posts.length > 0" class="cards">
+  <ul v-if="posts.length > 0" class="grid grid-cols-2 gap-4">
     <li
       v-for="(post, index) in posts"
       :key="index"
+      class="post-item"
     >
       <nuxt-link
         :to="`/${postType}/${post.slug}`"
-        class="card card--clickable"
+        class=" card--clickable"
       >
         <template v-if="postType === 'projects'">
           <span class="flex-1">
@@ -17,7 +18,7 @@
           <img
             v-if="post.cover"
             class="cover-image"
-            :src="post.cover"
+              :src="require(`~/assets/images/${post.cover}`)"
           >
         </template>
 
@@ -38,9 +39,7 @@
   </ul>
   <div v-else-if="loading" class="cards">
     <div v-for="placeholder in placeholderClasses" :key="placeholder.id" class="card">
-      <content-placeholders :rounded="true" :class="placeholder">
-        <content-placeholders-heading />
-      </content-placeholders>
+    
     </div>
   </div>
   <p v-else class="max-w-5xl mx-auto">
@@ -107,3 +106,9 @@
     },
   }
 </script>
+
+<style lang="scss">
+.post-item {
+  border: 1px solid red;
+}
+</style>
