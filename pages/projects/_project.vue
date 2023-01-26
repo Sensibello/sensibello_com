@@ -5,26 +5,37 @@
         <router-back class="block" />
       </nav>
 
-      <article>
-        <img
-          v-if="post.cover"
-          class="cover-image"
-          :src="require(`~/assets/images/${post.cover}`)"
-        >
-        <h6 class="inline py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6> 
- 
+  
+      <article class="project-content">
+          <div class="two-col-content">
+            <div class="half-content right-padding">
+               <img
+                v-if="post.cover"
+                class="cover-image"
+                :src="require(`~/assets/images/${post.cover}`)"
+              >
 
-        <h1 class="">{{ post.title }}</h1>
-        <p class="mt-1 mb-8 text-primary-600 dark:text-primary-400">{{ post.description }}</p>
-        <nuxt-content :document="post" />
-        <div v-if="post.gallery" class="nuxt-content">
-          <img
-            v-for="image in post.gallery"
-            class="image"
-            :key="image.id"
-            :src="require(`~/assets/images/${image}`)"
-          >
+                <div v-if="post.gallery" class="content-img">
+                <img
+                  v-for="image in post.gallery"
+                  class="image"
+                  :key="image.id"
+                  :src="require(`~/assets/images/${image}`)"
+                >
+              </div>
+
+            </div>
+            
+            <div class="half-content left-padding">
+                <p class="mt-2">Industry category: <span class="bold-text">{{ post.category }}</span></p> 
+                <h1 class="">{{ post.title }}</h1>
+                <a href="post.link" target="_blank" class="mt-2">{{ post.link }}</a>
+                <p class="mt-2">Tech stack: <span class="bold-text">{{ post.stack }}</span></p> 
+                <p class="mt-2">{{ post.description }}</p>
+                <nuxt-content :document="post" />
+            </div>
         </div>
+      
       </article>
     </section>
   </main>
@@ -43,3 +54,55 @@ export default {
   },
 }
 </script>
+
+
+<style lang="scss">
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.left-padding {
+
+}
+
+.right-padding {
+  padding-right: 4rem;
+}
+
+
+.project-content {
+  margin-top: 4rem;
+}
+
+.two-col-content {
+  display: flex;
+}
+
+.half-content {
+  width: 50%;
+}
+.cover-image {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: block;
+}
+
+.content-img {
+ img {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: block;
+  margin-top: 4rem;
+
+ } 
+}
+
+.nuxt-content-container {
+  p {
+    margin-top: 10px;
+  }
+}
+</style>

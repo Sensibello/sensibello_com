@@ -1,37 +1,37 @@
 <template>
-  <ul v-if="posts.length > 0" class="grid grid-cols-2 gap-4">
+  <ul v-if="posts.length > 0" class="cards-container">
     <li
       v-for="(post, index) in posts"
       :key="index"
-      class="post-item"
+      class="card-item"
     >
       <nuxt-link
         :to="`/${postType}/${post.slug}`"
-        class=" card--clickable"
+        class=" card-link"
       >
         <template v-if="postType === 'projects'">
-          <span class="flex-1">
-            <h6 class="inline-block py-1 px-2 mr-1 bg-gray text-white text-sm font-medium rounded-sm">{{ post.category }}</h6>
-            <h3 class="card-title">{{ post.title }}</h3>
-            <p class="mt-2">{{ post.description }}</p>
-          </span>
+         
           <img
             v-if="post.cover"
-            class="cover-image"
+            class="card-image"
               :src="require(`~/assets/images/${post.cover}`)"
           >
+          <span class="card-info">
+            <h6 class="category">{{ post.category }}</h6>
+            <h3 class="card-title">{{ post.title }}</h3>
+          </span>
         </template>
 
         <template v-else>
-          <span class="w-full">
-            <span class="flex justify-between align-baseline">
+          <span class="">
+            <span class="card-info">
               <h3 class="card-title">{{ post.title }}</h3>
               <h6
                 v-if="post.createdAt"
-                class="self-start inline-block mt-0 py-1 px-2 bg-gray text-white text-base font-medium rounded-sm whitespace-no-wrap"
+                class="date"
               >{{ formatDate(post.createdAt) }}</h6>
             </span>
-            <p class="mt-2">{{ post.description }}</p>
+           
           </span>
         </template>
       </nuxt-link>
@@ -111,4 +111,80 @@
 .post-item {
   border: 1px solid red;
 }
+.card-link {
+  border-bottom: none;
+
+  &:hover, &:focus {
+    border-bottom: none;
+    box-shadow: none;
+  }
+}
+.cards-container {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  flex-wrap: wrap;
+
+    @media(max-width: 600px) {
+      padding: 0;
+    }
+
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 20%;
+     margin: 10px 20px 10px 0px;
+    border-radius: 6px;
+    box-shadow: 0 20px 40px -14px #d6d6d6;
+    overflow: hidden;
+    transition: transform 0.5s;
+    -webkit-transition: transform 0.5s;
+     @media(max-width: 750px) {
+        width: 45%;
+        margin: 10px 20px 10px 0px;
+      }
+      @media(max-width: 480px) {
+        width: 90%;
+        margin: 10px;
+      }
+
+    .category {
+      background: #90edb3;
+      width: fit-content;
+      padding: 1px 5px;
+      border-radius: 2px;
+      font-size: .75rem;
+    }
+
+    .card-image {
+      height: auto;
+      width: 100%;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 6px 6px 0px 0px;
+      opacity: 0.91;
+    }
+
+   .card-info {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      padding: 1rem;
+      line-height: 1.5em;
+
+      .card-title {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+
 </style>

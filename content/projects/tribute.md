@@ -1,9 +1,11 @@
 ---
-category: global, mining
-title: Covia
+category: software
+title: Tribute
 description: Covia is a high quality mining company with a global reach.
 cover: mockups/tribute_desktop.jpg
 gallery: ['mockups/tribute_mobile.jpg']
+link: https://www.tribute.com
+stack: Umbraco (CMS), JavaScript, Razor, .NET
 ---
 
 It is easy to write **markdown**-_enabled_ content like this placeholder text, with support for images.

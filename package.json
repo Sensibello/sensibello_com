@@ -1,8 +1,8 @@
 {
-  "name": "Karli Sensibello",
-  "version": "1.0.0",
-  "description": "Karli Sensibello personal website",
-  "author": "Karli Sensibello",
+  "name": "ntn-boilerplate",
+  "version": "2.1.4",
+  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
+  "author": "Sven Parker <hello+dev@svenparker.com> (https://svenparker.com)",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
