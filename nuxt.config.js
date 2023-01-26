@@ -86,9 +86,6 @@ export default {
    modules: [
     '@nuxt/content',
     '@nuxtjs/style-resources',
-    '@nuxtjs/gtm',
-    '@nuxtjs/axios',
-    '@nuxtjs/auth-next',
   ],
 
   styleResources: {
