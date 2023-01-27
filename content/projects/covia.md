@@ -8,8 +8,6 @@ link: https://www.coviacorp.com
 stack: Umbraco (CMS), JavaScript, Razor, .NET
 ---
 
-It is easy to write **markdown**-_enabled_ content like this placeholder text, with support for images.
+_About COVIA:_ Covia's main role in that partnership is to provide a broad array of high-quality minerals and material solutions for the industrial and energy markets and a comprehensive and accessible distribution network.
 
-If you are in local development-mode (`npm run dev`) you can double-click here to edit this page quickly.
-
-Below are some Gallery photos that have been added to this Project.
+They support their customers and create value through market insight, a long-term solutions mindset and a culture of innovation, with distinctive expertise in areas such as micronization, resin development, coating and blending.

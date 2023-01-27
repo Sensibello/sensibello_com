@@ -3,7 +3,7 @@
       <div class="warning">
         <p>I'm actively updating my website! Please excuse the dust and check back soon for more projects.</p>
       </div>
-    <section class="intro grid">
+    <section class="intro" id="intro">
      
         <p class="intro-text">Fancy meeting you here... my name is</p>
         <h1>Karli Sensibello.</h1>
@@ -16,65 +16,93 @@
 
         <div class="highlights">
           <ul>
-            <li>Located in Cleveland, Ohio</li>
-            <li>Open to side-projects</li>
+            <li><svgz class="icon" src="location.svg" />Located in Cleveland, Ohio</li>
+            <li><svgz class="icon" src="check.svg" />Open to side-projects</li>
           </ul>
         </div>
 
         <div class="social-links">
           <ul>
-            <li class="button-item"><a class="button-style" href="https://www.linkedin.com/in/karlisensi" target="_blank">LinkedIn</a></li>
-            <li class="button-item"><a class="button-style" href="https://www.github.com/sensibello" target="_blank">Github</a></li>
-            <li class="button-item"><a class="button-style" href="mailto:karli@sensibello.com" target="_blank">Email</a></li>
+            <li class="button-item">
+                <a class="button-style" href="https://www.linkedin.com/in/karlisensi" target="_blank">
+                <svgz class="icon" src="linkedin.svg" />
+                LinkedIn
+              </a>
+            </li>
+            <li class="button-item">
+              <a class="button-style" href="https://www.github.com/sensibello" target="_blank">
+              <svgz class="icon" src="github.svg" />
+              Github
+              </a>
+            </li>
+            <li class="button-item">
+              <a class="button-style" href="mailto:karli@sensibello.com" target="_blank">
+               <svgz class="icon" src="email.svg" />
+                Email
+              </a>
+            </li>
           </ul>
         </div>
 
       </div>
-     
     </section>
 
+<!-- Mosaic Gallery + About -->
 
-    <section class="about-me top-padding" id="about">
-      <h3 class="h2-style">About</h3>
-      <div class="contained-text">
-        <p>My name is Karli, and I'm from Cleveland, Ohio. From a young age, I have always been interested in technology and creating art.  </p>
-        <p>I attended Cleveland State University (2014 - 2017), pursuing a degree in Psychology and Criminology. I had the intention of continuing on to law school after graduation. However, throughout high school and college, I always had an interest in web design. I would design and build simple websites for local businesses and friends in order to pay for college expenses, and I found myself looking forward to working on these side projects.</p>
-        <p>I decided after graduating college, I would take a year off before applying to law school, and completely focus on web design and development. The goal was to have a full-time development job that I enjoyed. If, after a year, I didn't enjoy it anymore, or did not find a position I felt happy in, I would go back to the original game-plan of law school. </p>
-        <p>I made that decision in 2017 and I haven't regretted it at any point in my career. I love what I do, I genuinely enjoy providing solutions to my clients that not only <em>look great</em>, but function even better. My goal is to always provide intuitive, accessible, personalized solutions to my clients.</p>
-      </div>
+  <mosaic                     
+          imageOne="karli_headshot_2.jpg"
+          imageTwo="karli-dexter-2.jpg"
+          imageThree="karli_headshot.jpeg"
+          imageFour="dexter-dwight.png"
+        
+    />
 
-    </section>
+<!-- Mosaic Gallery + About -->
 
-    <section class="">   
-      <h3 class="h2-style"> Projects </h3>   
-        <p class="intro-text">I'll be adding more projects here shortly, but for now, here's a few websites I built that I'm proud of.</p>
+    <!-- <section class="about-me top-padding" id="about">
+      
 
-       <posts post-type="projects" :amount="4" />
+    </section> -->
+    
+
+    <section class="" id="projects">   
+        <div class="grid color-example">
+          <div class="grid-l4 grid-m12">
+            <h3 class="h2-style"> Projects </h3>   
+              <p class="intro-text">I'll be adding more projects here shortly, but for now, here's a few websites I built that I'm proud of.</p>
+          </div>
+
+          <div class="grid-l8 grid-m12">
+            <posts post-type="projects" :amount="4" />
+          </div>
+      </div>  
     </section>
 
      <section class="">   
       <h3 class="h2-style"> Tech Stack / Skills</h3>
       <p class="intro-text">Recruiters <span class="bold-text">love</span> this section...</p>
+      <p class="small-text">*Green boxes designate tech / languages I am currently using.</p>
       <ul class="grid-list">
-        <li>UI / UX Design</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Vue.js (Nuxt)</li>
-        <li>HTML / CSS</li>
-        <li>SASS / SCSS</li>
-        <li>Accessibility Testing</li>
-        <li>PHP</li>
+        <li class="current">UI / UX Design</li>
+        <li class="current">JavaScript</li>
+        <li class="current">jQuery</li>
+        <li class="current">Vue.js (Nuxt)</li>
+        <li class="current">HTML / CSS</li>
+        <li class="current">SASS / SCSS</li>
+        <li class="current">Accessibility Testing</li>
+        <li class="current">PHP</li>
         <li>Custom CMS development</li>
-        <li>WordPress</li>
+        <li class="current">WordPress</li>
         <li>Umbraco</li>
         <li>Razor (.NET)</li>
         <li>Twig (PHP)</li>
-        <li>Adobe software</li>
+        <li class="current">Adobe software</li>
         <li>Figma</li>
-        <li>Git</li>
+        <li class="current">Git</li>
         <li>Bitbucket</li>
-        <li>Project mgmt software</li>
-
+        <li class="current">Project mgmt software</li>
+        <li class="current">Node.js</li>
+        <li class="current">NPM</li>
       </ul>   
       
     </section>
@@ -86,9 +114,24 @@
 
         <div class="social-links">
           <ul>
-            <li class="button-item"><a class="button-style" href="https://www.linkedin.com/in/karlisensi" target="_blank">LinkedIn</a></li>
-            <li class="button-item"><a class="button-style" href="https://www.github.com/sensibello" target="_blank">Github</a></li>
-            <li class="button-item"><a class="button-style" href="mailto:karli@sensibello.com" target="_blank">Email</a></li>
+            <li class="button-item">
+                <a class="button-style" href="https://www.linkedin.com/in/karlisensi" target="_blank">
+                <svgz class="icon" src="linkedin.svg" />
+                LinkedIn
+              </a>
+            </li>
+            <li class="button-item">
+              <a class="button-style" href="https://www.github.com/sensibello" target="_blank">
+              <svgz class="icon" src="github.svg" />
+              Github
+              </a>
+            </li>
+            <li class="button-item">
+              <a class="button-style" href="mailto:karli@sensibello.com" target="_blank">
+               <svgz class="icon" src="email.svg" />
+                Email
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -102,7 +145,14 @@
 </template>
 
 <script>
+import svgz from "~/components/global/svgz.vue";
+import mosaic from "~/components/mosaic.vue";
 export default {
+  components: {
+        svgz,
+        mosaic
+    },
+
   head() {
     return {
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],

@@ -8,8 +8,4 @@ link: https://www.signaturehealthinc.org
 stack: Umbraco (CMS), JavaScript, Razor, .NET
 ---
 
-It is easy to write **markdown**-_enabled_ content like this placeholder text, with support for images.
-
-If you are in local development-mode (`npm run dev`) you can double-click here to edit this page quickly.
-
-Below are some Gallery photos that have been added to this Project.
+_About SIGNATURE HEALTH:_ Signature Health is a non-profit, Federally Qualified Health Center providing mental health, addiction recovery, primary care and infectious disease services to patients across Northeast Ohio. In addition to providing comprehensive medical care, they also provide transportation assistance, an on-site pharmacy, on-site laboratory, and walk-in clinics.

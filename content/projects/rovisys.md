@@ -8,8 +8,4 @@ link: https://www.rovisys.com
 stack: Umbraco (CMS), JavaScript, Razor, .NET
 ---
 
-It is easy to write **markdown**-_enabled_ content like this placeholder text, with support for images.
-
-If you are in local development-mode (`npm run dev`) you can double-click here to edit this page quickly.
-
-Below are some Gallery photos that have been added to this Project.
+_About ROVISYS:_ RoviSys is a control system integrator and product development company with a foot planted firmly in the old and the new worlds of technology. Their engineers and developers know proprietary systems: Before joining RoviSys, many of them created some of the most successful large-scale control systems of the last decade.

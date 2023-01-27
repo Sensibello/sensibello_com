@@ -8,8 +8,4 @@ link: https://www.tribute.com
 stack: Umbraco (CMS), JavaScript, Razor, .NET
 ---
 
-It is easy to write **markdown**-_enabled_ content like this placeholder text, with support for images.
-
-If you are in local development-mode (`npm run dev`) you can double-click here to edit this page quickly.
-
-Below are some Gallery photos that have been added to this Project.
+_About TRIBUTE:_ Since 1983, Tribute, Inc. has been providing niche-focused and high-quality integrated ERP software solutions. They have created a signature software solution, TrulinX, to help industrial and engineering product distributors bolster profits and have an edge on competitors.

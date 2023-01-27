@@ -135,21 +135,18 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    width: 20%;
-     margin: 10px 20px 10px 0px;
+    width: 48%;
+     margin: 10px 10px 10px 0px;
     border-radius: 6px;
     box-shadow: 0 20px 40px -14px #d6d6d6;
     overflow: hidden;
     transition: transform 0.5s;
     -webkit-transition: transform 0.5s;
      @media(max-width: 750px) {
-        width: 45%;
+        width: 100%;
         margin: 10px 20px 10px 0px;
       }
-      @media(max-width: 480px) {
-        width: 90%;
-        margin: 10px;
-      }
+   
 
     .category {
       background: #90edb3;
