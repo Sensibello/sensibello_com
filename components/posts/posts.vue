@@ -108,11 +108,10 @@
 </script>
 
 <style lang="scss">
-.post-item {
-  border: 1px solid red;
-}
+
 .card-link {
   border-bottom: none;
+  padding: 20px;
 
   &:hover, &:focus {
     border-bottom: none;

@@ -70,6 +70,12 @@
           <div class="grid-l4 grid-m12">
             <h3 class="h2-style"> Projects </h3>   
               <p class="intro-text">I'll be adding more projects here shortly, but for now, here's a few websites I built that I'm proud of.</p>
+             
+             <div class="button-item mt4">
+                <a class="button-style" href="/projects">
+                  See all projects
+                </a>
+              </div>
           </div>
 
           <div class="grid-l8 grid-m12">

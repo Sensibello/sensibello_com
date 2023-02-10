@@ -91,6 +91,11 @@ h2, .h2-style {
     font-weight: 900;
 }
 
+strong {
+    font-size: inherit;
+    font-weight: 900;
+}
+
 h3, .h3-style {
     color: $black;
     font-family: $inter;
@@ -358,4 +363,8 @@ section {
         border-radius: 5px; 
         margin-bottom: 10px;
     }
+}
+
+.mt4 {
+    margin-top: 2rem;
 }

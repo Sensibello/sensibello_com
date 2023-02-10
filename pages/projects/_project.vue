@@ -28,11 +28,14 @@
             
             <div class="half-content left-padding">
                 <p class="mt-2">Industry category: <span class="bold-text">{{ post.category }}</span></p> 
-                <h1 class="">{{ post.title }}</h1>
+                <h1 class="h2-style">{{ post.title }}</h1>
                 <a href="post.link" target="_blank" class="mt-2">{{ post.link }}</a>
                 <p class="mt-2">Tech stack: <span class="bold-text">{{ post.stack }}</span></p> 
                 <p class="mt-2">{{ post.description }}</p>
-                <nuxt-content :document="post" />
+                <div class="project-content">
+                  <h3>About {{ post.title }}</h3>
+                  <nuxt-content :document="post" />
+                </div>
             </div>
         </div>
       
