@@ -20,7 +20,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/gtm": "^2.4.0",
     "axios": "^0.27.2",
-    "nuxt": "^2.14.10",
+    "nuxt": "^3.2.3",
     "nuxt-redirects": "^1.0.4",
     "portal-vue": "^2.1.7",
     "sass": "^1.57.1",
