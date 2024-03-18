@@ -1,48 +1,22 @@
 {
-  "name": "karli-sensibello",
-  "version": "2.1.4",
-  "description": "Karli Sensibello online portfolio",
-  "author": "Sven Parker <hello+dev@svenparker.com> (https://svenparker.com)",
+  "name": "Karli Sensibello",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Sensibello/sensibello_com.git"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@nuxt/content": "^1.15.1",
-    "@nuxtjs/axios": "^5.13.6",
-    "@nuxtjs/gtm": "^2.4.0",
-    "axios": "^0.27.2",
-    "nuxt": "^2.14.10",
-    "nuxt-redirects": "^1.0.4",
-    "portal-vue": "^2.1.7",
-    "sass": "^1.57.1",
-    "v-click-outside": "^3.2.0",
-    "v-dropdown-menu": "^1.3.2",
-    "vue": "^2.6.12",
-    "vue-breadcrumbs": "^1.2.0",
-    "vue-carousel": "^0.18.0",
-    "vue-simple-accordion": "^0.1.0",
-    "vue-social-sharing": "^3.0.4"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxtjs/color-mode": "^2.1.1",
-    "@nuxtjs/pwa": "^3.3.5",
-    "@nuxtjs/svg": "^0.4.0",
+    "@nuxt-themes/alpine": "latest",
+    "@nuxt/devtools": "^1.0.8",
+    "@nuxt/eslint-config": "^0.2.0",
+    "@nuxtjs/plausible": "^0.2.4",
     "netlify-cli": "^11.1.0",
-    "@nuxtjs/style-resources": "^1.0.0",
-    "@vue/test-utils": "^1.0.0-beta.27",
-    "babel-jest": "^24.1.0",
-    "sass-loader": "^8.0.2",
-    "vue-jest": "^4.0.0-0",
-    "vue-svg-loader": "^0.16.0",
-    "vue-template-compiler": "^2.6.12"
+    "@types/node": "^20.11.24",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.3"
   }
 }

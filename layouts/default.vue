@@ -1,8 +1,6 @@
 <template>
-  <div class="wrapper">
-    <Header />
-    
-    <nuxt />
-   
-  </div>
+  <main>
+    <slot />
+  </main>
 </template>
+

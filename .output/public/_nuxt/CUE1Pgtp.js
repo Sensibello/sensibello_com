@@ -1,0 +1,1 @@
+import{d as n,l as a,J as c,b as r,c as d,a5 as i}from"./BD2EHp4x.js";const p=["id"],u=n({__name:"ProseH2",props:{id:{}},setup(s){const t=s,{headings:o}=a().public.mdc;return c(()=>{var e;return t.id&&((e=o==null?void 0:o.anchorLinks)==null?void 0:e.h2)}),(e,l)=>(r(),d("h2",{id:e.id},[i(e.$slots,"default")],8,p))}});export{u as default};
